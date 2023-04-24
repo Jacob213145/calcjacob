@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form>
+		<label for="firstNumber">First Number:</label>
+		<input type="number" id="firstNumber" name="firstNumber"><br><br>
+		<label for="secondNumber">Second Number:</label>
+		<input type="number" id="secondNumber" name="secondNumber"><br><br>
+		<input type="button" value="Calculate" onclick="multiplyNumbers()">
+	</form>
+	<br>
+	<p id="result"></p>
+	<script>
+		function multiplyNumbers() {
+			var firstNumber = document.getElementById("firstNumber").value;
+			var secondNumber = document.getElementById("secondNumber").value;
+			var result = firstNumber * secondNumber;
+			document.getElementById("result").innerHTML = "Result: " + result;
+		}
+	</script>
+</body>
+</html>
